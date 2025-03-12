@@ -16,3 +16,4 @@ dependencies:
   - pytorch-cuda=12.4
   - yfinance
   - plotly
+  - jupyterlab

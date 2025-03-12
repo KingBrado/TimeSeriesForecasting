@@ -9,6 +9,6 @@ class DQN(nn.Module):
         self.fc3 = nn.Linear(128, output_dim)
 
     def forward(self, x):
-        x = torch.relu(self.fc1(x))
+        x = torch.relu(self.fc1(x.T))
         x = torch.relu(self.fc2(x))
         return self.fc3(x)  # No activation (raw Q-values)
